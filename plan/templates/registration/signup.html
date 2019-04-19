@@ -1,0 +1,39 @@
+
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+		<link rel="icon" type="image/png" href="{% static 'images/icons/favicon.ico' %}"/>
+		
+		<!-- MATERIAL DESIGN ICONIC FONT -->
+		<link rel="stylesheet" type="text/css" href="{% static 'css1/style.css' %}">
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="{% static 'css2/style.css' %}">
+        <div class="wrapper" style="background-image: url('{% static "images1/registration-form-2.jpg"%}')";>
+            <div class="inner">
+                <form method="post">
+                    <h3 style="color:white;size: 150px;">SIGN UP</h3>
+                    {% csrf_token %}
+                <div class="form-group">
+                  <div class="form-wrapper">
+                     {% for field in form %}
+                      <p>
+                          <b style="color: white; size:100px;">{{ field.label_tag }}</b><br>
+                       {{ field }}
+                     {% if field.help_text %}
+                     <!-- <small style="color: grey">{{ field.help_text }}</small> -->
+                     {% endif %}
+                     {% for error in field.errors %}
+                     <p style="color: red">{{ error }}</p>
+                      {% endfor %}
+                      </p>
+                     {% endfor %}
+                     <button type="submit">Sign up</button>
+                  </div>
+                </div>
+
+                </form>
+            </div>
+          </div>
+{% endblock %}

@@ -1,0 +1,510 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Plan It</title>
+<!-- meta tags -->
+    <a href="#" onclick="window.location.replace('/home/')"><link rel="icon" type="image/png" href="{% static 'images/icons/favicon.ico' %}"/></a>
+		
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Event Planner Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+SmartPhone Compatible web template, free web designs for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //meta tags -->
+<!-- custom Theme files -->
+<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link href="{% static 'css/chocolat.css' %}" rel="stylesheet">
+<!-- //custom Theme files -->
+<!-- js -->
+<script src="{% static 'js/jquery-1.11.1.min.js' %}"></script>
+<!-- //js -->
+<!-- web-fonts -->
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<link href="//fonts.googleapis.com/css?family=Niconne" rel="stylesheet">
+<!-- //web-fonts --> 
+</head>
+<body>
+	<!-- header -->
+	<!-- <div class="header">
+		<div class="container">
+			<div class="header-w3left">
+				<p><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>  +012-333-4444</p>
+			</div>
+			<div class="header-w3right">
+				<ul>
+					<li><a href="mailto:sample@example.com"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> info@example.com</a></li>
+					<li>|</li>
+					<li><a class="scroll" href="#contact">Contact</a></li>
+				</ul>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div> -->
+	<!-- //header -->
+	<!-- navigation -->
+ 
+	<div class="navigation" >
+		<div class="container" >
+		
+		<!-- <div class="agileits-logo">
+				<h1><a href="index.html">PLANiT</a></h1> 
+			</div> -->
+			<div class="agileits-logo" >
+				<a class="navbar-brand" href="index.html"><img src="{% static 'images/logo.png' %}"/></a>
+			</div>
+			<nav class="navbar navbar-default" >
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					
+				</div> 
+				<!-- Collect the nav links, forms, and other content for toggling -->  
+				<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1"> 
+					<ul class="nav navbar-nav" style="margin-left: 9%;">
+					   
+						<li class="hvr-bounce-to-bottom button"><a href="#about" class="scroll">About<span class="sr-only">(current)</span></a></li>
+
+
+                        <li class="dropdown" ><a class="hvr-bounce-to-bottom button" data-toggle="dropdown" href="#">Categories <span class="caret"></span></a>
+                                <ul class="dropdown-menu" >
+                                <li><a href="/categories/">Weddings</a></li>
+                                <li><a href="#">Meetings</a></li>
+                                <li><a href="#">Competitions</a></li>
+                                <li><a href="#">Sports</a></li>
+                                <li><a href="#">Photographers</a></li>
+								<li><a href="#">Concerts</a></li>
+                                <li><a href="#">Birthday</a></li>
+                                <li><a href="#">Funeral</a></li>								
+                                </ul>
+                        </li>
+						<li class="hvr-bounce-to-bottom button"><a href="#services" class="scroll">Services</a></li>				
+						<li class="hvr-bounce-to-bottom button"><a href="#team" class="scroll">Team</a></li>
+						<li class="hvr-bounce-to-bottom button"><a href="#contact" class="scroll">Contact</a></li>
+				
+					    <li class="hvr-bounce-to-bottom button"><a href="#"  class="scroll" onclick="window.location.replace('/info/')">Become Seller</a></li>
+					
+					</ul>
+					
+					<div class="social-icons">
+						<ul>
+                            <a href="#" onclick="window.location.replace('/signup/')"><button class="button button1">SignUp</button></a>
+                                 <a href="#" onclick="window.location.replace('/login/')"><button class="button button1">SignIn</button></a>
+							<!--<a href="login.html" ><button class="button button1">SignIn</button></a>-->
+						</ul>
+					</div>
+					
+				</div><!-- /.navbar-collapse -->
+			</nav>
+		</div>
+	</div>
+  
+	<!-- //navigation -->
+	<!-- banner -->
+<!--	<div class="banner">
+		<div class="container">
+			<script src="js/responsiveslides.min.js"></script>
+			<script>
+			// You can also use "$(window).load(function() {"
+			$(function () {
+				// Slideshow 4
+				$("#slider3").responsiveSlides({
+					auto: true,
+					pager: true,
+					nav: false,
+					speed: 500,
+					namespace: "callbacks",
+					before: function () {
+						$('.events').append("<li>before event fired.</li>");
+					},
+					after: function () {
+						$('.events').append("<li>after event fired.</li>");
+					}
+				});
+			});
+			</script>
+			<div  id="top" class="callbacks_container">
+				<ul class="rslides" id="slider3">
+					<li>
+						<div class="banner-agileinfo">
+							<h3>Welcome To PLANiT</h3>
+							<h4>We help you plan your special day</h4> 
+						</div>
+					</li>
+					<li>
+						<div class="banner-agileinfo">
+							<h3>WELCOME</h3>
+							<h4>Fallow new ideas for your wedding</h4>							
+						</div>
+					</li>
+					<li>
+						<div class="banner-agileinfo">
+							<h3>WELCOME</h3>
+							<h4>We help you plan your special day</h4>								
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>  -->
+	<!-- //banner -->
+	
+<div class="whole">	
+ <div class="w3-content w3-section" style="max-width:100%">
+ 
+
+
+
+  <img class="mySlides " src="{% static 'images/wedding.jpg' %}"/>
+    <div class="content">
+    <h1>Welcome To PLANiT</h1>
+    <h4>We help you plan your special day </h4>
+    </div>
+  <img class="mySlides " src="{% static 'images/wedding2.jpg' %}"/>
+  <img class="mySlides " src="{% static 'images/e2.jpg' %}"/>
+  <img class="mySlides " src="{% static 'images/e3.jpg' %}"/>
+ </div>
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 9000);    
+}
+</script>
+
+	
+	<!-- about -->
+	<div id="about" class="about">
+		<div class="container">
+			<h3 class="w3ls-tittle">About</h3>
+			<h5>PLanIt is an experienced event agency based in the Lahore, Pakistan, specialising in organising indoor and outdoor events. We organise conferences, awards ceremonies, marriages, birthday parties, dinners and venue finding – tailored to your precise requirements.</h5>
+			<div class="about-grids">
+				<div class="col-md-5 abt-left">
+					<img src= "{% static 'images/e1.png' %}" alt="" />
+				</div>
+				<div class="col-md-7 abt-right">
+					<h4>We Make Events Happen </h4>
+					<p> Customer Service is priority. This means you access seamless project management exactly where you need it.  All of our clients will confirm our expertise and dedication that ensures the success of their events. We offer exceptional service at an affordable price.</p>
+				
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!-- //about -->
+		<!-- services -->
+	<div id="services" class="services">
+		<div class="container">
+			<h2 class="w3ls-tittle">Services</h2>
+			<div class="services-grids w3layouts-grids">
+				<div class="col-md-6 services-left">
+					<div class="serw3agile-grid">	
+						<span class="hi-icon hi-icon-archive glyphicon glyphicon-check"> </span>
+					</div>
+					<div  class="ser-agiletop">
+						<h4>Best Quality</h4>
+						<p>Contrary to popular belief, Lorem Ipsum is not simply random text. 
+							It has roots in a piece of classical.Contrary to popular belief, Lorem Ipsum </p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="col-md-6 services-left">
+					<div class="serw3agile-grid">	
+						<span class="hi-icon hi-icon-archive glyphicon glyphicon-music"> </span>
+					</div>
+					<div  class="ser-agiletop">
+						<h4>Rocking Music</h4>
+						<p>Contrary to popular belief, Lorem Ipsum is not simply random text. 
+							It has roots in a piece of classical.Contrary to popular belief, Lorem Ipsum </p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="col-md-6 services-left">
+					<div class="serw3agile-grid">	
+						<span class="hi-icon hi-icon-archive glyphicon glyphicon-picture"> </span>
+					</div>
+					<div  class="ser-agiletop">
+						<h4>Amazing Themes</h4>
+						<p>Contrary to popular belief, Lorem Ipsum is not simply random text. 
+							It has roots in a piece of classical.Contrary to popular belief, Lorem Ipsum </p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="col-md-6 services-left">
+					<div class="serw3agile-grid">	
+						<span class="hi-icon hi-icon-archive glyphicon glyphicon-heart-empty"> </span>
+					</div>
+					<div  class="ser-agiletop">
+						<h4>Latest Collections</h4>
+						<p>Contrary to popular belief, Lorem Ipsum is not simply random text. 
+							It has roots in a piece of classical.Contrary to popular belief, Lorem Ipsum </p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!-- //services -->
+
+	<!-- gallery -->
+	<div id="gallery" class="gallery">
+		<div class="container">
+			<h3 class="w3ls-tittle">Gallery</h3>
+			<div class="gallery-wthreegrids">
+				<!-- EIGHTH EXAMPLE -->
+				<div class="view view-eighth">
+					<a href="{% static 'images/g1.jpg' %}" title="Image Title"><img src="{% static 'images/g1.jpg' %}" alt="" />
+						<div class="w3lmask">
+							<h4> Event Planner </h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales, leo vitae facilisis facilisis tristiq elit mauris posuere.</p>
+						</div>
+					</a>
+				</div>
+				<div class="view view-eighth">
+					<a href="{% static 'images/g2.jpg' %}" title="Image Title"><img src="{% static 'images/g2.jpg' %}" alt="" />
+						<div class="w3lmask">
+							<h4> Event Planner </h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales, leo vitae facilisis facilisis tristiq elit mauris posuere.</p>
+						</div>
+					</a>
+				</div>
+				<div class="view view-eighth">
+					<a href="{% static 'images/g3.jpg' %}"/> title="Image Title"><img src="{% static 'images/g3.jpg' %}" alt="" />
+						<div class="w3lmask">
+							<h4> Event Planner </h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales, leo vitae facilisis facilisis tristiq elit mauris posuere.</p>
+						</div>
+					</a>
+				</div>
+				<div class="view view-eighth">
+					<a href={% static 'images/g4.jpg' %}" title="Image Title"><img src="{% static 'images/g4.jpg' %}" alt="" />
+						<div class="w3lmask">
+							<h4> Event Planner </h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales, leo vitae facilisis facilisis tristiq elit mauris posuere.</p>
+						</div>
+					</a>
+				</div>
+				<div class="view view-eighth">
+					<a href={% static 'images/g5.jpg' %}" title="Image Title"><img src="{% static 'images/g5.jpg' %}" alt="" />
+						<div class="w3lmask">
+							<h4> Event Planner </h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales, leo vitae facilisis facilisis tristiq elit mauris posuere.</p>
+						</div>
+					</a>
+				</div>
+				<div class="view view-eighth">
+					<a href={% static 'images/g6.jpg' %}" title="Image Title"><img src="{% static 'images/g6.jpg' %}" alt="" />
+						<div class="w3lmask">
+							<h4> Event Planner </h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales, leo vitae facilisis facilisis tristiq elit mauris posuere.</p>
+						</div>
+					</a>
+				</div>
+				<div class="view view-eighth">
+					<a href={% static 'images/g8.jpg' %}" title="Image Title"><img src="{% static 'images/g7.jpg' %}" alt="" />
+						<div class="w3lmask">
+							<h4> Event Planner </h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales, leo vitae facilisis facilisis tristiq elit mauris posuere.</p>
+						</div>
+					</a>
+				</div>
+				<div class="view view-eighth">
+					<a href="{% static 'images/g2.jpg' %}" title="Image Title"><img src="{% static 'images/g2.jpg' %}" alt="" />
+						<div class="w3lmask">
+							<h4> Event Planner </h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales, leo vitae facilisis facilisis tristiq elit mauris posuere.</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="view view-eighth">
+					<a href="{% static 'images/g1.jpg' %}" title="Image Title"><img src="{% static 'images/g1.jpg' %}"  alt="" />
+						<div class="w3lmask">
+							<h4> Event Planner </h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales, leo vitae facilisis facilisis tristiq elit mauris posuere.</p>
+						</div>
+					</a>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<script src="js/jquery.chocolat.js"></script> 
+			<!-- light-box-files -->
+			<script type="text/javascript">
+			$(function() {
+				$('.gallery a').Chocolat();
+			});
+			</script> 
+		</div>
+	</div>
+	<!-- //gallery -->
+	<!-- team -->
+	<div id="team" class="team">
+		<div class="container">
+			<h3 class="w3ls-tittle t-team">Our Team</h3>
+			<ul class="ch-grid">
+				<li>
+					<div class="ch-item ch-img-1 agileits-w3layouts">				
+						<div class="ch-info-wrap">
+							<div class="ch-info">
+								<div class="ch-info-front ch-img-1"></div>
+								<div class="ch-info-back">
+									<h4>Victoria</h4>
+									<p><a href="#" class="f1"></a></p>
+									<p><a href="#" class="f2"></a></p> 
+								</div>	
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ch-item ch-img-2 agileits-w3layouts">
+						<div class="ch-info-wrap">
+							<div class="ch-info">
+								<div class="ch-info-front ch-img-2"></div>
+								<div class="ch-info-back">
+									<h4>William</h4>
+									<p><a href="#" class="f1"></a></p>
+									<p><a href="#" class="f2"></a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ch-item ch-img-3 agileits-w3layouts">
+						<div class="ch-info-wrap">
+							<div class="ch-info">
+								<div class="ch-info-front ch-img-3"></div>
+								<div class="ch-info-back">
+									<h4>Thompson</h4>
+									<p><a href="#" class="f1"></a></p>
+									<p><a href="#" class="f2"></a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ch-item ch-img-4 agileits-w3layouts">
+						<div class="ch-info-wrap">
+							<div class="ch-info">
+								<div class="ch-info-front ch-img-4"></div>
+								<div class="ch-info-back">
+									<h4>John Doe</h4>
+									<p><a href="#" class="f1"></a></p>
+									<p><a href="#" class="f2"></a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- //team -->
+	<!-- contact -->
+	<div class="contact" id="contact">
+		<div class="container">
+			<h3 class="w3ls-tittle">Contact</h3>
+			<div class="contact-bottom w3-agileits">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3402.643771783068!2d74.26397401464149!3d31.47898408138335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391903ccbf50a663%3A0x167a6a18c43e89a2!2sPunjab+University+College+of+Information+Technology+-+Quaid-e-Azam+Campus!5e0!3m2!1sen!2s!4v1545917296804" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div> 
+			<div class="col-md-7 contact-left">
+				<h3>Contact Form</h3>
+				<form action="#" method="post">
+					<input type="text" name="Name" placeholder="Name" required="">
+					<input type="text" name="Email" placeholder="Email" required="">
+					<input type="text" name="Telephone" placeholder="Telephone" required="">
+					<textarea name="Message" placeholder="Message" required=""></textarea>
+					<input type="submit" value="Submit" >
+				</form>
+			</div>
+			<div class="col-md-5 contact-left">
+				<h3>Address</h3>
+				<p> PLANiT</p>
+				<ul>
+					
+					<li>Lahore, Pakistan</li>
+					<li>+12 000-0000-00</li>
+					<li>Phone : +2 333 444 555</li>
+					<li>Mail : <a href="mailto:info@gmail.com">planIt@gmail.com</a></li>
+				</ul>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!-- //contact -->
+	<!-- footer -->
+	<div class="footer">
+		<div class="container">
+			<div class="footer-left agileits-w3layouts">
+				<p>&copy; 2018 Event Planner. All Rights Reserved | PLanIt</p>
+			</div> 
+			<div class="social-icons">
+						<ul>
+							<li><a href="#" class="f1"></a></li>
+							<li><a href="#" class="f2"></a></li>
+							<li><a href="#" class="f3"></a></li>
+							<li><a href="#" class="f4"></a></li>
+						</ul>
+					</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!-- //footer --> 
+	<script src="js/smoothscroll.min.js"></script>
+	<!-- start-smooth-scrolling -->
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>	
+	<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+			
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+	</script>
+	<!-- //end-smooth-scrolling -->	
+	<!-- smooth-scrolling-of-move-up -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+			};
+			*/
+			
+			$().UItoTop({ easingType: 'easeOutQuart' });
+			
+		});
+	</script>
+	<!-- //smooth-scrolling-of-move-up --> 
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+</body>
+</html>
